@@ -1,29 +1,33 @@
 [class^='$'],
 [class*=' $'] {
-  font-family: var(--\$-font-sans);
+  font-family: var(--\$font-sans);
   font-feature-settings:
     'rlig' 1,
     'calt' 1;
 
-  color: var(--\$-fg-gray-950);
+  color: var(--\$fg-gray-950);
 
   *,
   ::before,
   ::after {
-    border-color: var(--\$-border-gray-200);
+    border-color: var(--\$border-gray-200);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
   }
 
   *:focus-visible {
-    outline: 2px solid var(--\$-fg-gray-500);
+    outline: 2px solid var(--\$fg-gray-500);
     outline-offset: 2px;
+  }
+
+  *:disabled {
+    cursor: not-allowed;
   }
 
   code,
   kbd,
   samp,
   pre {
-    font-family: var(--\$-font-mono);
+    font-family: var(--\$font-mono);
   }
 }

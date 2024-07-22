@@ -1,0 +1,26 @@
+.\$input {
+  height: 34px;
+  width: 100%;
+  border-width: 1px;
+  border-radius: var(--\$border-radius-lg);
+  transition-property: none;
+  padding: 0 10px;
+  font-size: 14px;
+
+  &::placeholder {
+    color: var(--\$fg-gray-300);
+    font-weight: 400;
+  }
+
+  &:disabled {
+    color: var(--\$fg-gray-500);
+    background-color: var(--\$bg-gray-50);
+  }
+
+  &.\$input-sm {
+    height: 28px;
+    font-size: 12px;
+    padding: 0 8px;
+    border-radius: var(--\$border-radius-md);
+  }
+}

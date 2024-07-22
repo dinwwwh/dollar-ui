@@ -5,37 +5,37 @@
 
   height: 34px;
   padding: 0 13.5px;
-  border-radius: var(--\$-border-radius-lg);
-  background-color: var(--\$-bg-gray-950);
-  color: var(--\$-fg-gray-50);
+  border-radius: var(--\$border-radius-lg);
+  background-color: var(--\$bg-gray-950);
+  color: var(--\$fg-gray-50);
   border-width: 0.5px;
-  border-color: var(--\$-bg-gray-950);
+  border-color: var(--\$bg-gray-950);
 
   &:not(:disabled, [aria-disabled='true'], [data-disabled='true']) {
     box-shadow:
       rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset,
-      var(--\$-bg-gray-200) 0px 0px 0px 1px;
+      var(--\$bg-gray-200) 0px 0px 0px 1px;
 
     transition-property: filter, background-color, color;
 
     &:hover {
       filter: brightness(1.1);
-      background-color: var(--\$-bg-gray-900);
-      color: var(--\$-fg-gray-50);
+      background-color: var(--\$bg-gray-900);
+      color: var(--\$fg-gray-50);
     }
     /*disabled:bg-gray-200 disabled:text-gray-400 disabled:shadow-none disabled:hover:brightness-100 dark:disabled:bg-gray-500/10 dark:disabled:[background-image:none] dark:disabled:text-gray-700 dark:disabled:shadow-none dark:disabled:border-none bg-gradient-to-b [box-shadow:rgba(255,255,255,0.25)_0px_1px_0px_0px_inset,var(--btn-border-color)_0px_0px_0px_1px] text-white hover:brightness-[1.1] transition-[filter] duration-150 ease-in-out active:brightness-95 dark:shadow-inner dark:to-0% dark:border-t dark:shadow-white/10 disabled:from-gray-100 disabled:to-gray-100 from-primary-500  */
     &:active {
       filter: brightness(0.9);
-      background-color: var(--\$-bg-gray-800);
-      color: var(--\$-fg-gray-300);
+      background-color: var(--\$bg-gray-800);
+      color: var(--\$fg-gray-300);
     }
   }
 
   &:disabled,
   &[aria-disabled='true'],
   &[data-disabled='true'] {
-    background-color: var(--\$-bg-gray-700);
-    color: var(--\$-fg-gray-400);
+    background-color: var(--\$bg-gray-700);
+    color: var(--\$fg-gray-400);
     cursor: not-allowed;
   }
 
@@ -52,7 +52,7 @@
   &.\$btn-sm {
     height: 28px;
     padding: 0 10px;
-    border-radius: var(--\$-border-radius-md);
+    border-radius: var(--\$border-radius-md);
     font-size: 12px;
 
     svg {

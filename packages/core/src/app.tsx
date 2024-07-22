@@ -6,6 +6,7 @@ export function App() {
 
       <div className={classes.component}>
         <button className="$btn">Button</button>
+        <button className="$btn $btn-sm">Button</button>
       </div>
 
     </div>

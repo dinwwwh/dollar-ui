@@ -21,15 +21,31 @@
     --\$-color-zinc-900: #18181b;
     --\$-color-zinc-950: #09090b;
 
+    --\$-fg-gray-0: var(--\$-color-zinc-0);
     --\$-fg-gray-50: var(--\$-color-zinc-50);
+    --\$-fg-gray-100: var(--\$-color-zinc-100);
+    --\$-fg-gray-200: var(--\$-color-zinc-200);
+    --\$-fg-gray-300: var(--\$-color-zinc-300);
+    --\$-fg-gray-400: var(--\$-color-zinc-400);
     --\$-fg-gray-500: var(--\$-color-zinc-500);
+    --\$-fg-gray-600: var(--\$-color-zinc-600);
+    --\$-fg-gray-700: var(--\$-color-zinc-700);
     --\$-fg-gray-800: var(--\$-color-zinc-800);
+    --\$-fg-gray-900: var(--\$-color-zinc-900);
     --\$-fg-gray-950: var(--\$-color-zinc-950);
 
+    --\$-bg-gray-0: var(--\$-color-zinc-0);
     --\$-bg-gray-50: var(--\$-color-zinc-50);
     --\$-bg-gray-100: var(--\$-color-zinc-100);
+    --\$-bg-gray-200: var(--\$-color-zinc-200);
+    --\$-bg-gray-300: var(--\$-color-zinc-300);
+    --\$-bg-gray-400: var(--\$-color-zinc-400);
+    --\$-bg-gray-500: var(--\$-color-zinc-500);
+    --\$-bg-gray-600: var(--\$-color-zinc-600);
+    --\$-bg-gray-700: var(--\$-color-zinc-700);
     --\$-bg-gray-800: var(--\$-color-zinc-800);
     --\$-bg-gray-900: var(--\$-color-zinc-900);
+    --\$-bg-gray-950: var(--\$-color-zinc-950);
 
     --\$-border-gray-200: var(--\$-color-zinc-200);
 

@@ -13,6 +13,7 @@ export default antfu(
   {
     rules: {
       'react/prefer-destructuring-assignment': ['off'],
+      'react-dom/no-missing-button-type': ['off'],
     },
   },
   {

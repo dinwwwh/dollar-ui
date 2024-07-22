@@ -1,0 +1,22 @@
+[class^='$'],
+[class*=' $'] {
+  font-family: var(--\$-font-sans);
+  font-feature-settings:
+    'rlig' 1,
+    'calt' 1;
+
+  color: var(--\$-fg-gray-950);
+
+  *,
+  ::before,
+  ::after {
+    border-color: var(--\$-border-gray-200);
+  }
+
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: var(--\$-font-mono);
+  }
+}

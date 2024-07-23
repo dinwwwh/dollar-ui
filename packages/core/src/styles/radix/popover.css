@@ -1,0 +1,31 @@
+.\$radix-popover-content {
+  border-radius: var(--\$border-radius-md);
+  padding: 4px;
+  background: var(--\$bg-gray-0);
+  box-shadow: var(--\$box-shadow-md);
+  will-change: transform, opacity;
+  border-width: 1px;
+  max-width: 20rem;
+  z-index: 50;
+
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+  &[data-state='open'] {
+    &[data-side='top'] {
+      animation-name: \$slide-down-and-fade;
+    }
+
+    &[data-side='right'] {
+      animation-name: \$slide-left-and-fade;
+    }
+
+    &[data-side='bottom'] {
+      animation-name: \$slide-up-and-fade;
+    }
+
+    &[data-side='left'] {
+      animation-name: \$slide-right-and-fade;
+    }
+  }
+}

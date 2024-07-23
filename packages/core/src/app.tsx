@@ -1,4 +1,5 @@
 import { IconMenu2, IconUpload } from '@tabler/icons-react'
+import { Popover, PopoverContent, PopoverPortal, PopoverTrigger } from '@radix-ui/react-popover'
 import classes from './app.module.css'
 
 export function App() {
@@ -55,6 +56,21 @@ export function App() {
             </button>
           </div>
         </div>
+      </div>
+
+      <div className={classes.component}>
+        <Popover>
+          <PopoverTrigger asChild>
+            <button className="$btn">Open Popover</button>
+          </PopoverTrigger>
+
+          <PopoverPortal>
+            <PopoverContent sideOffset={4} className="$radix-popover-content">
+              xin chao
+            </PopoverContent>
+          </PopoverPortal>
+        </Popover>
+
       </div>
 
     </div>

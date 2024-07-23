@@ -1,15 +1,14 @@
 .\$input {
-  height: 34px;
+  height: 36px;
   width: 100%;
   border-width: 1px;
   border-radius: var(--\$border-radius-lg);
   transition-property: none;
-  padding: 0 10px;
+  padding: 0 12px;
   font-size: 14px;
 
   &::placeholder {
     color: var(--\$fg-gray-300);
-    font-weight: 400;
   }
 
   &:disabled {
@@ -20,7 +19,7 @@
   &.\$input-sm {
     height: 28px;
     font-size: 12px;
-    padding: 0 8px;
+    padding: 0 9px;
     border-radius: var(--\$border-radius-md);
   }
 }

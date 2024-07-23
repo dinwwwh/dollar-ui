@@ -1,4 +1,4 @@
-import { IconEdit } from '@tabler/icons-react'
+import { IconMenu2, IconUpload } from '@tabler/icons-react'
 import classes from './app.module.css'
 
 export function App() {
@@ -8,15 +8,18 @@ export function App() {
       <div className={classes.component}>
         <button className="$btn">Button</button>
         <button className="$btn $btn-square">
-          <IconEdit />
+          <IconMenu2 />
         </button>
-        <button className="$btn $btn-sm">Button</button>
+        <button className="$btn $btn-square">
+          B
+        </button>
+        <button className="$btn $btn-sm">Get started</button>
         <button className="$btn $btn-square $btn-sm">
-          <IconEdit />
+          <IconUpload />
         </button>
         <button className="$btn $btn-sm" disabled>Button</button>
         <button className="$btn $btn-square $btn-sm" disabled>
-          <IconEdit />
+          <IconUpload />
         </button>
       </div>
 
@@ -35,12 +38,22 @@ export function App() {
         <button className="$btn">Button</button>
       </div>
 
-      <div className={classes.component} style={{ maxWidth: 200 }}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <input className="$input $input-sm" placeholder="Enter your first name" style={{ marginRight: 8 }} />
-          <button className="$btn $btn-square $btn-sm">
-            <IconEdit />
+      <div className={classes.component}>
+        <div style={{ display: 'flex', alignItems: 'center', maxWidth: 200 }}>
+          <input className="$input $input-sm" placeholder="First name" style={{ marginRight: 8 }} />
+          <button className="$btn $btn-square $btn-sm" style={{ flexShrink: 0 }}>
+            <IconUpload />
           </button>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', maxWidth: 200 }}>
+          <div style={{ position: 'relative' }}>
+            <input className="$input" placeholder="First name" style={{ paddingRight: 60 }} />
+
+            <button className="$btn $btn-sm" style={{ position: 'absolute', right: 4, top: '50%', transform: 'translateY(-50%)' }}>
+              Save
+            </button>
+          </div>
         </div>
       </div>
 

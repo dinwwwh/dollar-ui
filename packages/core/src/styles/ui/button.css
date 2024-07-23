@@ -6,10 +6,7 @@
   height: 36px;
   padding: 0 15px;
   border-radius: var(--\$border-radius-lg);
-  background-color: var(--\$bg-gray-950);
-  color: var(--\$fg-gray-50);
   border-width: 0.5px;
-  border-color: var(--\$bg-gray-950);
   font-size: 14px;
   font-weight: 500;
 
@@ -23,18 +20,25 @@
     cursor: not-allowed;
   }
 
-  &:not(&.\$btn-ghost, &.\$btn-outline) {
+  &:not(.\$btn-ghost, .\$btn-outline) {
+    background-color: var(--\$bg-gray-950);
+    background-image: linear-gradient(
+      to bottom,
+      var(--\$bg-gray-800),
+      var(--\$bg-gray-950)
+    );
+    color: var(--\$fg-gray-50);
+    border-color: var(--\$bg-gray-950);
+
     &:not(:disabled, [aria-disabled='true'], [data-disabled='true']) {
       box-shadow:
         rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset,
         var(--\$bg-gray-200) 0px 0px 0px 1px;
 
       &:hover {
-        filter: brightness(1.1);
-        background-color: var(--\$bg-gray-900);
+        filter: brightness(1.2);
         color: var(--\$fg-gray-50);
       }
-      /*disabled:bg-gray-200 disabled:text-gray-400 disabled:shadow-none disabled:hover:brightness-100 dark:disabled:bg-gray-500/10 dark:disabled:[background-image:none] dark:disabled:text-gray-700 dark:disabled:shadow-none dark:disabled:border-none bg-gradient-to-b [box-shadow:rgba(255,255,255,0.25)_0px_1px_0px_0px_inset,var(--btn-border-color)_0px_0px_0px_1px] text-white hover:brightness-[1.1] transition-[filter] duration-150 ease-in-out active:brightness-95 dark:shadow-inner dark:to-0% dark:border-t dark:shadow-white/10 disabled:from-gray-100 disabled:to-gray-100 from-primary-500  */
       &:active {
         filter: brightness(0.8);
       }
@@ -44,6 +48,7 @@
     &[aria-disabled='true'],
     &[data-disabled='true'] {
       background-color: var(--\$bg-gray-700);
+      background-image: none;
       color: var(--\$fg-gray-400);
     }
   }
@@ -77,7 +82,7 @@
 
   &.\$btn-ghost {
     background-color: transparent;
-    border: none;
+    border-width: 0;
     box-shadow: none;
     color: var(--\$fg-gray-800);
 
@@ -101,7 +106,7 @@
     background-color: transparent;
     box-shadow: none;
     color: var(--\$fg-gray-800);
-    border-color: var(--\$border-gray-200);
+    border-width: 1px;
 
     &:not(:disabled, [aria-disabled='true'], [data-disabled='true']) {
       &:hover {

@@ -11,9 +11,6 @@ export function App() {
         <button className="$btn $btn-square">
           <IconMenu2 />
         </button>
-        <button className="$btn $btn-square">
-          B
-        </button>
         <button className="$btn $btn-sm">Get started</button>
         <button className="$btn $btn-square $btn-sm">
           <IconUpload />
@@ -28,6 +25,14 @@ export function App() {
         </button>
 
         <button className="$btn $btn-square $btn-sm $btn-ghost" disabled>
+          <IconUpload />
+        </button>
+
+        <button className="$btn $btn-square $btn-sm $btn-outline">
+          <IconUpload />
+        </button>
+
+        <button className="$btn $btn-square $btn-sm $btn-outline" disabled>
           <IconUpload />
         </button>
       </div>

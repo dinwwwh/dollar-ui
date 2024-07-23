@@ -22,6 +22,14 @@ export function App() {
         <button className="$btn $btn-square $btn-sm" disabled>
           <IconUpload />
         </button>
+
+        <button className="$btn $btn-square $btn-sm $btn-ghost">
+          <IconUpload />
+        </button>
+
+        <button className="$btn $btn-square $btn-sm $btn-ghost" disabled>
+          <IconUpload />
+        </button>
       </div>
 
       <div className={classes.component}>

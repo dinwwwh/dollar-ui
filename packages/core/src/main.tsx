@@ -1,6 +1,7 @@
 import '@fontsource-variable/jetbrains-mono'
 import '@fontsource-variable/inter'
 import './styles/all.css'
+import './main.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'

@@ -58,6 +58,16 @@
     height: 17px;
   }
 
+  .\$btn-icon-left {
+    margin-left: -3px;
+    margin-right: 6px;
+  }
+
+  .\$btn-icon-right {
+    margin-left: 6px;
+    margin-right: -3px;
+  }
+
   &.\$btn-square {
     padding: 0;
     width: 36px;
@@ -72,6 +82,16 @@
     svg {
       width: 14.5px;
       height: 14.5px;
+    }
+
+    .\$btn-icon-left {
+      margin-left: -2px;
+      margin-right: 4px;
+    }
+
+    .\$btn-icon-right {
+      margin-left: 4px;
+      margin-right: -2px;
     }
 
     &.\$btn-square {
